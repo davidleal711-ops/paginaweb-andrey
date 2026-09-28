@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguridad Integral & Domótica</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Iconos Lucide (para CCTV, candados, etc.) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="logo">
+            <i data-lucide="shield-check"></i>
+            <span>SecureHome</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#cotizador">Cotizador</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Encabezado / Banner Principal -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Protege lo que más importa con Tecnología Inteligente</h1>
+            <p>Especialistas en CCTV, automatización de espacios y soluciones avanzadas de seguridad.</p>
+            <a href="#cotizador" class="btn-primary">Calcular Presupuesto</a>
+        </div>
+    </header>
+
+    <!-- Sección de Servicios -->
+    <section id="servicios" class="services">
+        <h2>Nuestros Servicios</h2>
+        <div class="cards-grid">
+            <div class="card">
+                <i data-lucide="camera" class="card-icon"></i>
+                <h3>Sistemas CCTV</h3>
+                <p>Cámaras IP de alta definición, visión nocturna y monitoreo remoto desde tu smartphone 24/7.</p>
+            </div>
+            <div class="card">
+                <i data-lucide="cpu" class="card-icon"></i>
+                <h3>Domótica Integral</h3>
+                <p>Control de iluminación, cerraduras inteligentes, persianas y climatización con la voz o app.</p>
+            </div>
+            <div class="card">
+                <i data-lucide="bell-ring" class="card-icon"></i>
+                <h3>Alarmas y Sensores</h3>
+                <p>Sistemas anti-intrusión con alertas en tiempo real y respuesta rápida ante emergencias.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cotizador Interactivo -->
+    <section id="cotizador" class="calculator-section">
+        <h2>Cotizador Rápido de Servicios</h2>
+        <p>Selecciona los componentes que necesitas para obtener una estimación al instante:</p>
+
+        <form id="calc-form" class="calculator-card">
+            <div class="form-group">
+                <label for="cameras">Cámaras de Seguridad (CCTV):</label>
+                <input type="number" id="cameras" min="0" value="0">
+            </div>
+
+            <div class="form-group">
+                <label for="smart-locks">Cerraduras Inteligentes:</label>
+                <input type="number" id="smart-locks" min="0" value="0">
+            </div>
+
+            <div class="form-group">
+                <label>
+                    <input type="checkbox" id="alarm-system"> Incluir Sistema de Alarma Central
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label>
+                    <input type="checkbox" id="automation-hub"> Incluir Central de Domótica (Control por Voz/App)
+                </label>
+            </div>
+
+            <div class="total-box">
+                <span>Total Estimado:</span>
+                <strong id="total-price">$0 USD</strong>
+            </div>
+
+            <button type="button" id="whatsapp-btn" class="btn-whatsapp">
+                <i data-lucide="message-square"></i> Consultar por WhatsApp
+            </button>
+        </form>
+    </section>
+
+    <!-- Pie de página -->
+    <footer id="contacto">
+        <p>&copy; 2026 SecureHome - Soluciones en Seguridad y Domótica.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Inicializar iconos de Lucide
+        lucide.createIcons();
+    </script>
+</body>
+</html>
